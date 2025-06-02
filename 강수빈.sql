@@ -15,6 +15,7 @@ select  employee_id
         ,department_id 
 from employees
 where department_id = 100
+order by salary desc 
 ;
 
 
@@ -47,12 +48,10 @@ order by hire_date asc
 */
 select  max(salary) maxSalary
 		,avg(salary) avgSalary
-	    ,department_id 'department_id'
+	    ,department_id
 from employees
 group by department_id
 ;
-
-
 
 
 
